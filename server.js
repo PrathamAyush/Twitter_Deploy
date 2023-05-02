@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const path = require("path")
 require("dotenv").config();
 
 // Module Calling
@@ -36,4 +37,5 @@ app.get("/", (req, res) => {
 
 app.listen(3200, () => {
     console.log("Server Started At port", 3200);
+})
 })
